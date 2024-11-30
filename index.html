@@ -53,8 +53,107 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button class="mobmenu-close-btn" data-menu-close>
+          <svg class="mobmenu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="mobmenu-nav-list">
+            <li class="mobmenu-nav-item">
+              <a href="./index.html" class="mobmenu-nav-link"
+                ><span class="blue">Studio</span></a
+              >
+            </li>
+            <li class="mobmenu-nav-item">
+              <a href="" class="mobmenu-nav-link">Portfolio</a>
+            </li>
+            <li class="mobmenu-nav-item">
+              <a href="" class="mobmenu-nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mobile-menu-address">
+          <ul class="mobmenu-address-list">
+            <li class="mobmenu-address-item">
+              <a class="mobmenu-tel-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobmenu-address-item">
+              <a class="mobmenu-email-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="mobile-menu-smedia">
+          <ul class="mobmenu-icons-list">
+            <li class="mobmenu-smedia-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="icons-link"
+              >
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobmenu-icons-list">
+              <a
+                href="https://x.com/i/flow/login"
+                target="_blank"
+                class="icons-link"
+              >
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobmenu-icons-list">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="icons-link"
+              >
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobmenu-icons-list">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="icons-link"
+              >
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <!--main-->
     <main>
       <!--1 Section_Hero-->
@@ -136,7 +235,11 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/img-1.jpg"
+                src="./images/team/img01_@1x.jpg"
+                srcset="
+                  ./images/team/img01_@1x.jpg 1x,
+                  ./images/team/img01_@2x.jpg 2x
+                "
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -197,7 +300,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-2.jpg"
+                src="./images/team/img02_@1x.jpg"
+                srcset="
+                  ./images/team/img02_@1x.jpg 1x,
+                  ./images/team/img02_@2x.jpg 2x
+                "
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -258,7 +365,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-3.jpg"
+                src="./images/team/img03_@1x.jpg"
+                srcset="
+                  ./images/team/img03_@1x.jpg 1x,
+                  ./images/team/img03_@2x.jpg 2x
+                "
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -319,7 +430,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-4.jpg"
+                src="./images/team/img04_@1x.jpg"
+                srcset="
+                  ./images/team/img04_@1x.jpg 1x,
+                  ./images/team/img04_@2x.jpg 2x
+                "
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -390,7 +505,11 @@
             <li class="portfolio-item">
               <div class="portfolio-box">
                 <img
-                  src="./images/img-port-01.jpg"
+                  src="./images/portfolio/img01_desk@1x.jpg"
+                  srcset="
+                    ./images/portfolio/img01_desk@1x.jpg 1x,
+                    ./images/portfolio/img01_desk@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -409,7 +528,11 @@
             <li class="portfolio-item">
               <div class="portfolio-box">
                 <img
-                  src="./images/img-port-02.jpg"
+                  srcset="
+                    ./images/portfolio/img02_desk@1x.jpg 1x,
+                    ./images/portfolio/img02_desk@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img02_desk@1x.jpg "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -428,7 +551,9 @@
             <li class="portfolio-item">
               <div class="portfolio-box">
                 <img
-                  src="./images/img-port-03.jpg"
+                  srcset="./images/portfolio/img03_desk@1x.jpg x1,
+                          ./images/portfolio/img03_desk@2x.jpg 2x"
+                  src="./images/portfolio/img03_desk@1x.jpg "
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -446,8 +571,13 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-box">
+                <!-- src="./images/img-port-04.jpg" -->
                 <img
-                  src="./images/img-port-04.jpg"
+                  srcset="
+                    ./images/portfolio/img04_desk@1x.jpg 1x,
+                    ./images/portfolio/img04_desk@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img04_desk@1x.jpg "
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -465,8 +595,13 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-box">
+                <!-- src="./images/img-port-05.jpg" -->
                 <img
-                  src="./images/img-port-05.jpg"
+                  srcset="
+                    ./images/portfolio/img05_desk@1x.jpg 1x,
+                    ./images/portfolio/img05_desk@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img05_desk@1x.jpg "
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -484,8 +619,13 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-box">
+                <!-- src="./images/img-port-06.jpg" -->
                 <img
-                  src="./images/img-port-06.jpg"
+                  srcset="
+                    ./images/portfolio/img06_desk@1x.jpg 1x,
+                    ./images/portfolio/img06_desk@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img06_desk@1x.jpg "
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -608,64 +748,66 @@
         </p>
 
         <form class="modal-form">
-          <div class="modal-form-field">
-            <label class="modal-form-label" for="user-name">Name</label>
-            <div class="modal-form-wrapper">
-              <input
-                class="modal-form-input"
-                type="text"
-                id="user-name"
-                name="user-name"
-                minlength="2"
-                required
-                placeholder=" "
-                autofocus
-              />
-              <svg class="modal-form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-name"></use>
-              </svg>
+          <div class="modal-group-inputs">
+            <div class="modal-form-field">
+              <label class="modal-form-label" for="user-name">Name</label>
+              <div class="modal-form-wrapper">
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  minlength="2"
+                  required
+                  placeholder=" "
+                  autofocus
+                />
+                <svg class="modal-form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
             </div>
-          </div>
 
-          <div class="modal-form-field">
-            <label class="modal-form-label" for="phone">Phone</label>
-            <div class="modal-form-wrapper">
-              <input
-                class="modal-form-input"
-                type="tel"
-                name="phone"
-                id="phone"
-              />
-              <svg class="modal-form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
+            <div class="modal-form-field">
+              <label class="modal-form-label" for="phone">Phone</label>
+              <div class="modal-form-wrapper">
+                <input
+                  class="modal-form-input"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                />
+                <svg class="modal-form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
             </div>
-          </div>
 
-          <div class="modal-form-field">
-            <label class="modal-form-label" for="email">Email</label>
-            <div class="modal-form-wrapper">
-              <input
-                class="modal-form-input"
-                type="email"
-                name="email"
-                id="email"
-                required
-              />
-              <svg class="modal-form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
+            <div class="modal-form-field">
+              <label class="modal-form-label" for="email">Email</label>
+              <div class="modal-form-wrapper">
+                <input
+                  class="modal-form-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                />
+                <svg class="modal-form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
             </div>
-          </div>
 
-          <div class="modal-form-comment">
-            <label class="modal-form-label" for="user-comment">Comment</label>
-            <textarea
-              class="modal-form-textarea"
-              name="user-comment"
-              id="user-comment"
-              placeholder="Text input"
-            ></textarea>
+            <div class="modal-form-comment">
+              <label class="modal-form-label" for="user-comment">Comment</label>
+              <textarea
+                class="modal-form-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
           </div>
 
           <div class="modal-form-chbox">
@@ -682,8 +824,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-link" href="" target="_blank">Privacy Policy</a>
+              <p class="modal-policy-text">
+                I accept the terms and conditions of the
+                <a class="modal-link" href="" target="_blank">Privacy Policy</a>
+              </p>
             </label>
           </div>
 
@@ -692,7 +836,19 @@
       </div>
     </div>
 
+    <!-- burger menu -->
+    <!-- <div class="mobile-menu" data-menu>
+      <div class="container">
+        <button class="modal-close-btn" type="button" data-menu-close'>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div> -->
+
     <!-- js -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
