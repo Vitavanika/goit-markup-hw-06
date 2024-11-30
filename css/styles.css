@@ -36,7 +36,7 @@ a {
 }
 
 h3 {
-    color: #2E2F42;
+    color: #2e2f42;
 }
 
 input,
@@ -137,8 +137,6 @@ button {
 }
 
 .burger-btn {
-    padding: 0;
-    border: none;
     background-color: transparent;
 }
 
@@ -296,7 +294,8 @@ button {
 }
 
 .mobmenu-nav-list {
-    display: inline-grid;
+    display: flex;
+    flex-direction: column;
     gap: 40px;
 }
 
@@ -469,9 +468,7 @@ button {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-
     text-align: center;
-    color: #2e2f42;
     margin: 8px auto;
 }
 
@@ -491,7 +488,6 @@ button {
 @media only screen and (min-width:768px) {
     .features-list {
         flex-direction: row;
-        /* flex-wrap: wrap; */
         justify-content: space-between;
         gap: 72px 24px;
     }
@@ -630,7 +626,7 @@ button {
     border-radius: 50%;
     border: 1px;
     background-color: #4d5ae5;
-    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
@@ -694,7 +690,6 @@ button {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
     text-align: left;
     margin-bottom: 8px;
 }
@@ -878,12 +873,15 @@ button {
     width: 165px;
     height: 40px;
     background: #4d5ae5;
-
 }
 
 .footer-subscribe-icon {
     fill: #fff;
     margin-left: 16px;
+}
+
+.footer-subscribe-email:focus {
+    border: 1px solid #fff;
 }
 
 @media only screen and (min-width:768px) {
@@ -1134,7 +1132,6 @@ button {
     color: #8e8f99;
     user-select: none;
     align-items: center;
-
     gap: 8px;
 }
 
@@ -1145,7 +1142,6 @@ button {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    /* margin-right: 8px; */
     fill: transparent;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
